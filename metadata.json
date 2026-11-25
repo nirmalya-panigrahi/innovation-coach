@@ -1,0 +1,6 @@
+{
+  "name": "Coach Hub — Ideation & Innovation Gateway",
+  "description": "Responsive slanted split-screen gateway connecting Ideation Coach and Innovation Coach.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

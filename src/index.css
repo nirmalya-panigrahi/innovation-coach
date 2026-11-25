@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1a1a1a;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.split-clip-transition {
+  transition: clip-path 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: clip-path;
+}
+
+.seam-line-transition {
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.panel-clip-left {
+  clip-path: var(--mobile-left-clip);
+}
+
+.panel-clip-right {
+  clip-path: var(--mobile-right-clip);
+}
+
+@media (min-width: 768px) {
+  .panel-clip-left {
+    clip-path: var(--desktop-left-clip);
+  }
+
+  .panel-clip-right {
+    clip-path: var(--desktop-right-clip);
+  }
+}
+
+.central-drag-transition {
+  transform: translate3d(0, var(--mobile-bulb-y, 0dvh), 0);
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+@media (min-width: 768px) {
+  .central-drag-transition {
+    transform: translate3d(var(--desktop-bulb-x, 0vw), 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .split-clip-transition,
+  .seam-line-transition,
+  .central-drag-transition {
+    transition: none !important;
+  }
+}
