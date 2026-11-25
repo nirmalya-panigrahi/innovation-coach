@@ -23,6 +23,10 @@
     "dotenv": "^17.2.3",
     "motion": "^12.23.24"
   },
+  "overrides": {
+  "tldts": "7.5.5",
+  "tldts-core": "7.5.5"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "^8.0.0",
     "@testing-library/react": "^16.3.3",
