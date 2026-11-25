@@ -8,7 +8,7 @@ export default defineConfig(() => {
   const basePath = process.env.VITE_BASE_PATH || '/';
 
   return {
-    base: basePath,
+    base: '/innovation-coach/',
     plugins: [
       react(),
       tailwindcss(),
