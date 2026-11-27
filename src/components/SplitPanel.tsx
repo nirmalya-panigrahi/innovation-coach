@@ -25,9 +25,7 @@ export function SplitPanel({
   return (
     <a
       href={config.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`${config.title} — ${config.tagline}. Opens in a new tab.`}
+      aria-label={`${config.title} — ${config.tagline}.`}
       data-testid={`panel-${config.side}`}
       onMouseEnter={() => onMouseEnter(config.side)}
       onMouseLeave={onMouseLeave}

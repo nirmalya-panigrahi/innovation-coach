@@ -13,6 +13,8 @@ describe('Coach Hub Landing Page Integration', () => {
 
     expect(leftPanel).toHaveAttribute('href', 'https://ideation-coach.vercel.app/');
     expect(rightPanel).toHaveAttribute('href', 'https://innovation-coach.vercel.app/');
+    expect(leftPanel).not.toHaveAttribute('target', '_blank');
+    expect(rightPanel).not.toHaveAttribute('target', '_blank');
 
     // Selected icon boxes and EST. 2026 must be removed
     expect(leftPanel.querySelector('.fa-lightbulb')).not.toBeInTheDocument();

@@ -117,8 +117,6 @@ export function InfoModal({section, onClose, onSwitchSection}: InfoModalProps) {
                 </p>
                 <a
                   href={COACH_PANELS.left.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="font-display mt-4 inline-flex items-center gap-1.5 text-xs font-bold tracking-[0.12em] text-[#B81D65] uppercase hover:underline"
                 >
                   <span>{COACH_PANELS.left.ctaLabel}</span>
@@ -138,8 +136,6 @@ export function InfoModal({section, onClose, onSwitchSection}: InfoModalProps) {
                 </p>
                 <a
                   href={COACH_PANELS.right.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="font-display mt-4 inline-flex items-center gap-1.5 text-xs font-bold tracking-[0.12em] text-[#D93800] uppercase hover:underline"
                 >
                   <span>{COACH_PANELS.right.ctaLabel}</span>
@@ -255,8 +251,6 @@ export function InfoModal({section, onClose, onSwitchSection}: InfoModalProps) {
                       </div>
                       <a
                         href={fw.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className="inline-flex min-h-[36px] shrink-0 items-center gap-1.5 self-start rounded-lg border border-black/15 px-3 py-1.5 font-display text-xs font-semibold text-[#1A1A1A] transition-colors hover:bg-[#1A1A1A] hover:text-white"
                       >
                         <span>Launch</span>

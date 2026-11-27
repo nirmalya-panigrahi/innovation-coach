@@ -59,8 +59,6 @@ export function NavigationDrawer({
                 <a
                   key={panel.id}
                   href={panel.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   onClick={onClose}
                   className="group flex items-center justify-between rounded-xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-white/25 hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-white"
                 >
